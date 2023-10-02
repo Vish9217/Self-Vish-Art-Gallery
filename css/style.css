@@ -1,0 +1,298 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap');
+
+.logo{
+    height: 50px;
+    width: 160px;
+   margin-left: 0;
+}
+#header{  /* for aline logo and all home shop its*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #D0D0BC;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;/*The z-index property specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order.*/
+    position: sticky;/*for sticking the navbar at one position even we scrolled up or down*/
+    top: 0;
+    left: 0;
+
+}
+
+#navbar{/* for aline  all home shop its one after another*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#navbar li{
+    /* for removing the builets of all and spacing*/
+list-style: none;
+padding: 0 20px;
+position: relative;/* for postiton of underline */
+}
+#navbar li a{/* for removing the underlines*/
+   text-decoration: none;
+   font-family: 'Clicker Script' , cursive;
+   font-size: 26px;
+   font-weight: 600;
+   color: #1a1a1a;
+   transition: 0.3s ease;/* To remove the quick transition of color*/
+}
+#navbar li a:hover,
+#navbar li a.active /*and .active is for the highliting of home */{/* to change the color of home shop and all when we get cursor on it*/
+    color: #088178;
+
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{ /* for underline*/
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color:hsl(176, 88%, 27%) ;
+    position: absolute;
+    bottom: -4px;
+    left:20px;
+}
+
+/* Home Page*/
+
+
+
+#hero{
+   
+   
+    background-repeat: no-repeat;
+    
+    background-size: 75% 100%;
+    background-position:  top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+ 
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+  
+
+    
+    
+}
+#hero h4{
+    margin-top: 70px;
+    filter: none;
+   
+  
+}
+#hero h2{
+    color: #088178;
+    margin-left: -60px;
+    margin-bottom: -20px;
+    filter:none;
+    
+}
+#hero p{
+    color: #1a1a1a;
+    margin-bottom: 50px;
+    filter: none;
+    font-size: 16px;
+    
+
+margin-top: 50px;
+}
+#hero h1{
+    margin-left: 240px;
+}
+#hero h1 span{
+    font-family: 'Clicker Script' , cursive;
+    font-size: 60px;
+    font-weight: 700;
+    color:#3EB489;
+  
+}
+#hero p span{
+    font-family: 'Clicker Script' , cursive;
+    font-size: 16px;
+    color: #FF5F1F;
+}
+#hero span{
+    font-family: 'Clicker Script' , cursive;
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--text-black-900);
+
+}
+#fnt{
+    filter: none;
+    -webkit-filter: none;
+}
+#hero button{
+    
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-top: 10px;
+    color:#3EB489;
+    padding: 10px 30px 10px 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 35px;
+    margin-bottom: 200px;
+    font-family: 'Clicker Script' , cursive;
+    
+    
+   
+    
+}
+#hero button:hover{
+    z-index: 10px;
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.3);
+  color: #3EB489;
+
+    
+}
+.shi{
+    height: 130px;
+    width: 150px;
+   margin-left: 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box img{
+width: 100;
+margin-bottom: 10px;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+
+}
+#feature .fe-box h6{
+  
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color:  #D0D0BC;
+    margin: 0 0;
+
+}
+.des{
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+    width: auto;
+}
+/* Styling of Gallery  is Started*/
+#GIMG1{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 100%;
+}
+#GIMG2{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 100%;
+}
+#GIMG3{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 100%;
+}
+#GIMG14{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 100%;
+}
+#GIMG4{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 100%;
+    padding-left: 10%;
+}
+#vid1{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 100%;
+}
+#char{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 100%;
+    
+}
+#graph{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    width: 100%;
+    position: relative;
+    
+}
+.wrapper{
+    display: inline-flex;
+    position: relative;
+}
+.wrapper .icon{
+    margin: 0 20px;
+    cursor: pointer;
+
+}
+.wrapper .icon span{
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    text-align: center;
+}
+.wrapper .icon span i{
+    font-size: 25px;
+    line-height: 60px;
+}
+.wrapper .icon .tooltip{
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
